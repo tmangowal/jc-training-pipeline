@@ -14,7 +14,7 @@ pipeline {
         stage('Deliver') {
           steps {
             sh 'docker container rm --force jc-pipeline-container'
-            sh 'docker run --name jc-pipeline-container -p 2021:2021 tmangowal/jc-training-pipeline &'
+            sh 'docker run --name jc-pipeline-container -p 2021:2021 tmangowal/jc-training-pipeline'
           }
         }
     }
