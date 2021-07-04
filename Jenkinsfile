@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deliver') {
           steps {
-            sh 'docker run --name jc-pipeline-container -p 2021:2021 tmangowal/jc-ah-pipeline'
+            sh 'docker run --name jc-pipeline-container -p 2021:2021 tmangowal/jc-ah-pipeline &'
           }
         }
     }
